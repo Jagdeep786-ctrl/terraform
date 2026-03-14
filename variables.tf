@@ -1,3 +1,4 @@
+
 variable "ec2_ami_id" {
     default = "ami-02dfbd4ff395f2a1b"
     type = string
@@ -14,6 +15,6 @@ variable "ec2_root_storage_type" {
 }
 
 variable "env" {
-    default =  "dev"
+    default = "dev"
     type = string
 }
