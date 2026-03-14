@@ -62,7 +62,7 @@ resource "aws_security_group" "my_sg" {
   }
 
   ingress {
-    description = "Allow SSH ACCESS"
+    description = "Allow SSH ACCESS "
     from_port   = 22
     to_port     = 22
     protocol    = "tcp"
@@ -78,7 +78,7 @@ resource "aws_security_group" "my_sg" {
   }
 
   tags = {
-    Name = "automate-sgTF"
+    Name = "automate-sg-TF"
   }
 }
 
