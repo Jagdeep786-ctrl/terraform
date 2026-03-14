@@ -85,7 +85,7 @@ ingress {
 resource "aws_instance" "my-instance" {
     for_each = tomap({
         instance1 = "t3.small"
-        instance2 = "t3.small"
+        instance2 = "t3.micro"
     })
     key_name = aws_key_pair.my-key.key_name
     vpc_security_group_ids = [aws_security_group.my-sg.id]
